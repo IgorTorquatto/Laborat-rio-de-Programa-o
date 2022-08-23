@@ -1,0 +1,13 @@
+Estruturas condicionais podem ser aplicadas usando as estruturas if, elif e else. Veja a sintaxe:
+
+if [ condicao ]; then
+	echo '...'
+elif [ outra_condicao ]; then
+	echo '...'
+else
+	echo '...'
+fi
+
+Condições são aplicadas entre colchetes [ ]. Após cada condição, devemos adicionar “; then“. Além disso, ao final precisamos adicionar o comando “fi“.
+
+Note que para avaliarmos uma condição, precisamos primeiro conhecer os operadores relacionais, lógicos ou aritméticos.

@@ -1,0 +1,11 @@
+Podemos usar qualquer comando de terminal dentro de um arquivo “.sh”. Por isso, podemos utilizar esse tipo de script para automatizar tarefas administrativas ou até mesmo execução múltipla de scripts.
+
+Lendo todos os arquivos de um diretório
+Podemos ler todos os arquivos de um diretório usando o comando “ls”. Veja:
+
+#!/bin/sh  
+
+arquivos=$(ls)
+
+echo $arquivos
+

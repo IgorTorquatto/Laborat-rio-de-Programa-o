@@ -1,0 +1,17 @@
+Operadores lógicos
+Já os osperadores lógicos permitem realizar múltiplas comparações. Eles podem ser:
+
+Operadores	Descrição	Exemplos
+! 	Diferente	[ ! $x = 10 ]
+Verifica se o valor de x é diferente de 10.
+-o 	ou (or)	[ $x = 10 -o $x = 20 ]
+Verifica se o valor de x é igual a 10 ou 20
+-a 	e (and)	[ $x -gt 0 -a $x -lt 10 ]
+Verifica se o valor de x é maior que 0 e menor que 10.
+
+Ex:
+x=6
+
+if [ $x -gt 0 -a $x -lt 10 ]; then
+	echo 'x é maior que 0 e menor que 10'
+fi

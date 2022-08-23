@@ -1,0 +1,35 @@
+for ((i=1; i<5; i++))
+do
+    echo $i
+done
+
+
+# para cada argumento como $i
+for i in "$@" 
+do
+	echo $i
+done
+
+$@ pega todos os argumentos
+
+
+While:
+
+echo "Menu de seleção:"
+echo "1. Exibir mensagem de saudação"
+echo "2. Exibir o dia e a hora"
+echo "3. Sair"
+
+while read -p "Qual opção você deseja? " entrada
+do
+    if [ $entrada -eq 1 ]; then
+        echo "Bem-vindo(a)!"
+        break
+    elif [ $entrada -eq 2 ]; then
+    	date
+    	break
+    else
+        echo "Até mais!"
+        break
+    fi
+done

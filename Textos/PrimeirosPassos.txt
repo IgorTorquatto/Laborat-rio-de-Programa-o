@@ -1,0 +1,15 @@
+Scripts são arquivos de texto que devem ser salvos com a extensão “.sh“. Por exemplo:
+
+meu_script_shell.sh
+
+Para executá-lo, o sistema deve ter a permissão de execução. Para isso, acesse o terminal, acesse o diretório em que o script se encontra (use o comando cd) e rode o comando:
+
+chmod +x meu_script_shell.sh
+
+Para executar o script, no terminal, digite:
+
+./meu_script_shell.sh
+
+Podemos ainda executar o programa, chamando no terminal:
+
+sh meu_script_shell.sh

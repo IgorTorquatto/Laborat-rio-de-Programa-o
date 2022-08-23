@@ -1,0 +1,9 @@
+Podemos criar uma variável apenas inserindo um nome e atribuindo um valor com o operador “=”. Note que não podemos ter espaços entre o nome da variável, o operador “=” e o valor atribuído. Veja:
+
+#!/bin/sh
+
+mensagem="Olá mundo!"
+
+echo "A mensagem é: $mensagem"
+
+Note que para chamar as variáveis, precisamos declarar um cifrão “$” antes de seu nome. Entretanto, esse cifrão não é necessário na hora de declará-la.

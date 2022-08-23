@@ -1,0 +1,12 @@
+Agora, vamos criar um script básico que apenas exibe uma mensagem na tela. Crie um novo arquivo chamado ‘teste.sh‘. Agora adicione as seguintes linhas de código:
+
+#!/bin/sh  
+# a linha acima declara o bin que executará o script
+          
+clear                
+# a linha acima executa um comando shell que limpa a tela
+
+echo "Olá mundo!"    
+# a linha acima escreve a mensagem "Olá mundo"
+
+# comentários são feitos com '#'

@@ -1,0 +1,51 @@
+Agora, vamos criar vários arquivos de texto em um diretório e lê-los usando shell script:
+
+#!/bin/sh  
+
+echo 'teste1' > exemplo1.txt 
+echo 'teste2' > exemplo2.txt
+
+arquivos=$(ls *txt)
+
+
+for i in $arquivos
+do
+	echo $i
+done 
+Note que o operador “>” joga o resultado impresso na tela para um arquivo.
+
+Irá printar exemplo1.txt e exemplo2.txt , mas não o que escrevemos que é 'teste1' e 'teste2'
+
+Conseguimos detectar os arquivos, mas como podemos fazer para lê-los? Basta usar o comando “cat” no lugar de “echo”.
+
+#!/bin/sh  
+
+echo 'teste1' > exemplo1.txt 
+echo 'teste2' > exemplo2.txt
+
+arquivos=$(ls *txt)
+
+
+for i in $arquivos
+do
+	cat $i
+done 
+
+
+
+Podemos ainda gravá-lo em um único arquivo, usando o operador “>>”, que joga o resultado da execução para um arquivo (modo incremental).
+
+No exemplo a seguir, vamos ler todos os arquivos com cat e gravá-los em um outro arquivo chamado “todos_exemplos.txt”:
+
+#!/bin/sh  
+
+echo 'teste1' > exemplo1.txt 
+echo 'teste2' > exemplo2.txt
+
+arquivos=$(ls *txt)
+
+
+for i in $arquivos
+do
+	cat $i >> todos_exemplos.txt
+done 

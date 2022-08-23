@@ -1,0 +1,2 @@
+Para saber mais, execute no terminal sh --help. Até mais!
+

@@ -1,0 +1,10 @@
+Podemos receber argumentos enviados na chamada do programa usando as variáveis $1, $2, $3, … $9:
+
+#!/bin/sh  
+
+echo "Parâmetros digitados: $1 $2 $3"
+
+Exemplo:
+./test.sh abacate bola
+
+$1 é abacate $2 é bola

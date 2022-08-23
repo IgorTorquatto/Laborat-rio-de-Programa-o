@@ -1,0 +1,39 @@
+Para comparar valores, precisamos utilizar os operadores relacionais. São eles:
+
+Operador	Definição
+–eq	Igual
+–ne	Diferente
+–gt	Maior que
+–lt	Menor que
+–ge	Maior ou igual que
+–le	Menor ou igual que
+
+
+Ex:
+#!/bin/sh  
+
+x=10
+y=20
+
+# verifica se x é maior que y
+if [ $x -gt $y ]; then
+	echo 'x maior que y'
+fi
+
+
+# verifica se y é maior que x
+if [ $y -gt $x ]; then
+	echo 'y maior que x'
+fi
+
+Ou:
+
+x=10
+y=20
+
+# verifica se x é maior que y
+if [ $x -gt $y ]; then
+	echo 'x maior que y'
+elif [ $y -gt $x ]; then
+	echo 'y maior que x'
+fi
