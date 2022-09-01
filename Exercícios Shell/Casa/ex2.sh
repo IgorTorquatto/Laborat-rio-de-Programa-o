@@ -8,5 +8,3 @@ if [ -d $pasta ]; then
 else
 	echo "Diretório não existe, usuário não cadastrado."
 fi
-
-#comando -d checa se o diretório existe, se dentro de uma condição só retorna true se o diretório realmente existir.
