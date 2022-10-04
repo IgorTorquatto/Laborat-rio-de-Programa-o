@@ -1,5 +1,5 @@
-palavra_secreta='likotrico'
-letras_acertadas=['_','_','_','_','_','_','_','_','_']
+palavra_secreta='gnostico'
+letras_acertadas=['_','_','_','_','_','_','_','_',]
 print(letras_acertadas)
 
 acertou=False 
