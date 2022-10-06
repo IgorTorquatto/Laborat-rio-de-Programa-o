@@ -8,4 +8,7 @@ equacao=f"{num1} {operacao} {num2}"
 #Eval para converter a string recebidas pelos inputs:
 resultado=eval(equacao)
 
-print("Resultado: {}".format(resultado))
+string=" Resultado: "
+
+print(f"{string:*^50}")
+print("{}".format(resultado))
