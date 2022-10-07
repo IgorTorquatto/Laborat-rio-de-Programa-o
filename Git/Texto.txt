@@ -1,0 +1,40 @@
+1-Criar arquivo
+2-git init
+3-git status 
+( Ramo master-Principal 
+No commits yet 
+Mostra os arquivos da pasta
+)
+4-git add arquivo.ex
+5-git commit -m "Mensagem"
+(Mensagem do commit - obrigatório-) (deve estar logado na conta; dá pra fazer pelo terminal também)
+6-git log
+(Mostra as especificações dos commits e informações)
+7- git branch nome_branch
+(Cria branch)
+8-Apenas git branch 
+(Mostra todas as branch's)
+9- git checkout nome_branch 
+(Circular pelas branch's) ( O Head mostra o local que estamos no momento atual).
+10- nano arquivo.ex 
+(Abre o editor ctrl+x para sair e ctrl+o para salvar)
+11- Após isso dar um git add arquivo.ex e o commit novamente.
+12- git log --all 
+(Mostra todos os commits por branch)
+13- Para dar um merge mudamos para a branch master
+git checkout master
+git merge nome_Branch
+Vai unir , se der algum conflito vai mostrar a linha que houve o conflito.
+14-Cria-se o repositório no github e Damos os comandos para um repositório já existente:
+Exemplo da aula:
+git remote add origin https://github.com/IgorTorquattto/Aula_laborat-rio.git
+git branch -M main
+git push -u origin main
+Dá erro de que não se pode mais upar os códigos só pelo usuário e senha desde 13 de agosto de 2021.
+Dá up pelo ssh. 
+cat /home/ufca/.ssh/id_rsa.pub
+Cola a chave publica no ssh de settings
+e dá o push pelo ssh do repositorio 
+
+
+https://learngitbranching.js.org/?locale=pt_BR
