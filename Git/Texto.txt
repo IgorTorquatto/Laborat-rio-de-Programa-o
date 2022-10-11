@@ -35,6 +35,10 @@ Dá up pelo ssh.
 cat /home/ufca/.ssh/id_rsa.pub
 Cola a chave publica no ssh de settings
 e dá o push pelo ssh do repositorio 
-
-
 https://learngitbranching.js.org/?locale=pt_BR
+
+Observações:
+-Caso o git não permita dar commits e , por consequência pushes, provavelmente o usuário não está cadastrado no sistema do PC.
+-Para corrigir isso :
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
